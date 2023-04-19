@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gcomercial.Infra.Data\Gcomercial.Infra.Data.csproj" />
+    <ProjectReference Include="..\Gcomercial.Infrastructure.Ioc\Gcomercial.Infrastructure.Ioc.csproj" />
+  </ItemGroup>
+
+</Project>
