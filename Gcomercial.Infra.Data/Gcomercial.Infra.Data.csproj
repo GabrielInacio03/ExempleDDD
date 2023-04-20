@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Gcomercial.Domain\Gcomercial.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

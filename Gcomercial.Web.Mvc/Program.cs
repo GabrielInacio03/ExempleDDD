@@ -1,4 +1,5 @@
 using Gcomercial.Infra.Data.Context;
+using Gcomercial.Infrastructure.Ioc;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 	options.UseSqlServer(connString));
 
 builder.Services.AddControllersWithViews();
+
+DependencyContainer.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
