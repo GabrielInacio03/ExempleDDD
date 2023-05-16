@@ -1,0 +1,35 @@
+﻿@model Gcomercial.Application.ViewModels.ProdutoViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="Create">Novo Produto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produto in Model.Produtos) {
+            <tr>
+                <td>@produto.Nome</td>
+                <td>@produto.Preco</td>
+                <td>@produto.Quantidade</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
