@@ -25,9 +25,9 @@
                 <td>@produto.Preco</td>
                 <td>@produto.Quantidade</td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Edit", "Edit", new {  id=produto.Id  }) |
+                    @Html.ActionLink("Details", "Details", new {  id=produto.Id  }) |
+                    @Html.ActionLink("Delete", "Delete", new {  id=produto.Id  })
                 </td>
             </tr>
         }
