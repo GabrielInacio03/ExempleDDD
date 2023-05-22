@@ -15,12 +15,12 @@ namespace Gcomercial.Web.Mvc.Controllers
 		public IActionResult Index()
 		{
 			ProdutoViewModel model = _produtoService.GetProdutos();
-
-			foreach (var item in model.Produtos)
-			{
-                Console.WriteLine("item -> "+ item.Nome);
-            }
 			return View(model);
 		}
+		public IActionResult Create(ProdutoViewModel model)
+		{
+            //ProdutoViewModel model = _produtoService.GetProdutos();
+            return View();
+        }
 	}
 }
