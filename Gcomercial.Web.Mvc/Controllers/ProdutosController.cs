@@ -19,7 +19,6 @@ namespace Gcomercial.Web.Mvc.Controllers
 		}
 		public IActionResult Create(ProdutoViewModel model)
 		{
-            //ProdutoViewModel model = _produtoService.GetProdutos();
             return View();
         }
 	}
