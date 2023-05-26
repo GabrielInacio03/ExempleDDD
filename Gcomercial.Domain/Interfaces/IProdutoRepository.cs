@@ -10,5 +10,7 @@ namespace Gcomercial.Domain.Interfaces
 	public interface IProdutoRepository
 	{
 		IEnumerable<Produto> GetProdutos();
-	}
+		void AddProduto(Produto produto);
+
+    }
 }

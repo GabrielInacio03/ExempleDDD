@@ -20,5 +20,10 @@ namespace Gcomercial.Infra.Data.Repositories
 		{
 			return _context.Produtos;
 		}
-	}
+        public void AddProduto(Produto produto)
+        {
+            _context.Set<Produto>().Add(produto);
+			_context.SaveChanges();
+        }
+    }
 }

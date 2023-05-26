@@ -1,5 +1,6 @@
 ﻿using Gcomercial.Application.Interfaces;
 using Gcomercial.Application.ViewModels;
+using Gcomercial.Domain.Entities;
 using Gcomercial.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -23,5 +24,10 @@ namespace Gcomercial.Application.Services
 				Produtos = _produtoRepository.GetProdutos()
 			};
 		}
-	}
+
+        public void AddProduto(Produto produto)
+        {
+			_produtoRepository.AddProduto(produto);
+        }
+    }
 }
